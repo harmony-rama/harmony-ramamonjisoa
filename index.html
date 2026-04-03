@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Harmony Ramamonjisoa — Remote Operations & Logistics Specialist</title>
+<meta name="description" content="Remote Operations & Logistics Specialist with 5+ years cross-border experience. Native French speaker. Cold chain logistics, last-mile delivery, B2B customer support. Available US Eastern hours."/>
+<meta name="keywords" content="remote operations specialist, logistics coordinator, French English bilingual, delivery coordinator, cold chain logistics, dispatch coordinator, B2B customer support, remote operations Philippines"/>
+<meta name="author" content="Harmony Ramamonjisoa"/>
+<meta property="og:title" content="Harmony Ramamonjisoa — Remote Operations & Logistics Specialist"/>
+<meta property="og:description" content="5+ years remote ops. Native French speaker. Cold chain, last-mile delivery, B2B support. Available US Eastern hours."/>
+<meta property="og:type" content="website"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Harmony Ramamonjisoa","jobTitle":"Remote Operations & Logistics Specialist","email":"Camille.Ramamonjisoa@gmail.com","telephone":"+63-906-072-3927","address":{"@type":"PostalAddress","addressCountry":"PH"},"knowsLanguage":["French","English","Korean","Malagasy"],"sameAs":["https://www.linkedin.com/in/harmony-ramamonjisoa/"]}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --white:   #ffffff;
+  --off:     #f7f6f4;
+  --beige:   #ede9e3;
+  --border:  #e2ddd7;
+  --muted:   #9a9490;
+  --body:    #3a3632;
+  --ink:     #1c1a18;
+  --teal:    #007a87;
+  --teal-lt: #e6f4f6;
+  --teal-md: #b3dde3;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--white);
+  color: var(--body);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── NAV ───────────────────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 48px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--teal); }
+
+.nav-cta {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 8px 20px;
+  background: var(--teal);
+  color: var(--white) !important;
+  border-radius: 4px;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.nav-cta:hover { opacity: 0.85; }
+
+/* ── HERO ──────────────────────────────────────────────────────── */
+.hero {
+  padding-top: 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 60px; right: 0;
+  width: 45%;
+  height: 100%;
+  background: var(--off);
+  z-index: 0;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: up 0.6s ease forwards 0.1s;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
+
+.hero-h1 {
+  font-family: 'Lora', serif;
+  font-size: clamp(38px, 4.5vw, 60px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: up 0.6s ease forwards 0.25s;
+}
+
+.hero-h1 em {
+  font-style: italic;
+  color: var(--teal);
+}
+
+.hero-sub {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: up 0.6s ease forwards 0.4s;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: up 0.6s ease forwards 0.5s;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  color: var(--body);
+  background: var(--white);
+}
+
+.tag.teal {
+  border-color: var(--teal-md);
+  background: var(--teal-lt);
+  color: var(--teal);
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: up 0.6s ease forwards 0.6s;
+}
+
+.btn {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-teal { background: var(--teal); color: var(--white); }
+.btn-teal:hover { opacity: 0.85; }
+.btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--border); }
+.btn-outline:hover { border-color: var(--teal); color: var(--teal); }
+
+/* STATS card */
+.hero-stats {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 40px 36px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+  opacity: 0;
+  animation: up 0.6s ease forwards 0.45s;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.stat-val {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.stat-val span { color: var(--teal); }
+
+.stat-lbl {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.langs-row {
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lang-pill {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 11px;
+  border-radius: 20px;
+  background: var(--teal-lt);
+  color: var(--teal);
+  border: 1px solid var(--teal-md);
+}
+
+.lang-pill.neutral {
+  background: var(--off);
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+/* ── METRICS STRIP ─────────────────────────────────────────────── */
+.strip {
+  background: var(--teal);
+  padding: 28px 0;
+}
+
+.strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.strip-item { text-align: center; }
+
+.strip-num {
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1;
+}
+
+.strip-lbl {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-top: 4px;
+}
+
+/* ── SECTIONS ──────────────────────────────────────────────────── */
+.section { padding: 96px 0; }
+.section.off { background: var(--off); }
+.section.white { background: var(--white); }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.sec-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+.sec-title {
+  font-family: 'Lora', serif;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 56px;
+}
+
+.sec-title em { font-style: italic; color: var(--teal); }
+
+/* ── SERVICES ──────────────────────────────────────────────────── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.srv-card {
+  background: var(--white);
+  padding: 40px 32px;
+  transition: background 0.25s;
+}
+
+.srv-card:hover { background: var(--teal-lt); }
+.srv-card:hover .srv-num { color: var(--teal); }
+
+.srv-num {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 16px;
+  transition: color 0.25s;
+}
+
+.srv-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.srv-desc { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+/* ── EXPERIENCE ────────────────────────────────────────────────── */
+.exp-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  padding: 36px 0;
+  border-top: 1px solid var(--border);
+}
+
+.exp-item:last-child { border-bottom: 1px solid var(--border); }
+
+.exp-meta { padding-top: 2px; }
+
+.exp-period {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--teal);
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.exp-where {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.exp-co {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.exp-role {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.exp-bullets li {
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.65;
+  padding-left: 16px;
+  position: relative;
+}
+
+.exp-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-weight: 500;
+}
+
+.exp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.chip {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 3px;
+  background: var(--off);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* ── TOOLS ─────────────────────────────────────────────────────── */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tool-card {
+  background: var(--white);
+  padding: 28px 24px;
+}
+
+.tool-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tool-list { list-style: none; }
+
+.tool-list li {
+  font-size: 13px;
+  color: var(--body);
+  padding: 4px 0;
+  border-bottom: 1px solid var(--off);
+}
+
+.tool-list li:last-child { border-bottom: none; }
+
+/* ── WHY ───────────────────────────────────────────────────────── */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.why-text .lead {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.why-text .lead em { font-style: italic; color: var(--teal); }
+
+.why-text p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.why-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+
+.why-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.65;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.why-list li:first-child { border-top: 1px solid var(--border); }
+
+.why-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--teal-lt);
+  border: 1px solid var(--teal-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-size: 10px;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+/* ── CONTACT ───────────────────────────────────────────────────── */
+.contact {
+  background: var(--ink);
+  padding: 100px 48px;
+  text-align: center;
+}
+
+.contact .sec-label { color: rgba(255,255,255,0.4); }
+
+.contact-title {
+  font-family: 'Lora', serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.contact-title em { font-style: italic; color: var(--teal-md); }
+
+.contact-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 40px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-btns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.btn-white { background: var(--white); color: var(--ink); }
+.btn-white:hover { background: var(--teal-lt); color: var(--teal); }
+.btn-ghost { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.2); }
+.btn-ghost:hover { border-color: var(--teal-md); color: var(--teal-md); }
+
+.contact-detail {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.04em;
+  line-height: 2;
+}
+
+/* ── FOOTER ────────────────────────────────────────────────────── */
+footer {
+  background: var(--ink);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+}
+
+/* ── ANIMATION ─────────────────────────────────────────────────── */
+@keyframes up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.on { opacity: 1; transform: none; }
+
+/* ── MOBILE ────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  nav { padding: 0 24px; }
+  .nav-links { display: none; }
+  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero::before { display: none; }
+  .services-grid, .tools-grid { grid-template-columns: 1fr; }
+  .exp-item { grid-template-columns: 1fr; gap: 8px; }
+  .why-grid { grid-template-columns: 1fr; gap: 40px; }
+  .container { padding: 0 24px; }
+  .section { padding: 64px 0; }
+  .strip-inner { justify-content: center; gap: 24px; }
+  .contact { padding: 72px 24px; }
+  footer { flex-direction: column; gap: 8px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-name">Harmony Ramamonjisoa</span>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">Available · Full-time Remote · US Eastern Hours</div>
+      <h1 class="hero-h1">Remote Operations<br>& <em>Logistics</em> Specialist</h1>
+      <p class="hero-sub">5+ years coordinating cross-border logistics, B2B customer support, and delivery operations across the US, Singapore, and Philippines. Native French speaker.</p>
+      <div class="hero-tags">
+        <span class="tag teal">Cold Chain Logistics</span>
+        <span class="tag teal">Last-Mile Delivery</span>
+        <span class="tag teal">B2B Operations</span>
+        <span class="tag">Dispatch & Reconciliation</span>
+        <span class="tag">French · English · Korean</span>
+      </div>
+      <div class="hero-cta">
+        <a href="mailto:Camille.Ramamonjisoa@gmail.com" class="btn btn-teal">Get in touch</a>
+        <a href="https://www.linkedin.com/in/harmony-ramamonjisoa/" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-val">100<span>+</span></div>
+          <div class="stat-lbl">Queries / week</div>
+        </div>
+        <div>
+          <div class="stat-val">15<span>+</span></div>
+          <div class="stat-lbl">Daily loads</div>
+        </div>
+        <div>
+          <div class="stat-val">5<span>+</span></div>
+          <div class="stat-lbl">Years remote ops</div>
+        </div>
+        <div>
+          <div class="stat-val">90<span>%</span></div>
+          <div class="stat-lbl">Client satisfaction</div>
+        </div>
+      </div>
+      <div class="langs-row">
+        <span class="lang-pill">French · Native</span>
+        <span class="lang-pill">English · Fluent</span>
+        <span class="lang-pill">Korean · Advanced</span>
+        <span class="lang-pill neutral">Malagasy</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- METRICS STRIP -->
+<div class="strip">
+  <div class="strip-inner">
+    <div class="strip-item"><div class="strip-num">50+</div><div class="strip-lbl">B2B clients managed</div></div>
+    <div class="strip-item"><div class="strip-num">120+</div><div class="strip-lbl">Advisory clients served</div></div>
+    <div class="strip-item"><div class="strip-num">3</div><div class="strip-lbl">Countries of ops experience</div></div>
+    <div class="strip-item"><div class="strip-num">4</div><div class="strip-lbl">Languages spoken</div></div>
+    <div class="strip-item"><div class="strip-num">2x</div><div class="strip-lbl">Simultaneous remote roles</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section white" id="services">
+  <div class="container">
+    <p class="sec-label reveal">Core competencies</p>
+    <h2 class="sec-title reveal">What I bring<br>to your <em>operations</em></h2>
+    <div class="services-grid reveal">
+      <div class="srv-card">
+        <div class="srv-num">01</div>
+        <h3 class="srv-title">Logistics & Delivery Operations</h3>
+        <p class="srv-desc">End-to-end shipment coordination — dispatch, carrier management, depot liaison, billing, and reconciliation. Experienced in cold chain pharmaceutical logistics and US East Coast last-mile delivery across 15+ daily loads.</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-num">02</div>
+        <h3 class="srv-title">B2B Customer Support & Operations</h3>
+        <p class="srv-desc">Managing 100+ weekly queries for 50+ B2B clients. CRM platforms, ticket resolution, escalation handling, and cross-departmental coordination to maintain high client satisfaction and on-time delivery performance.</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-num">03</div>
+        <h3 class="srv-title">Remote Team & Project Coordination</h3>
+        <p class="srv-desc">SOP development, new hire training, volunteer and partner coordination, and event logistics — delivered across multiple time zones simultaneously. Proven ability to manage complexity without losing detail.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section off" id="experience">
+  <div class="container">
+    <p class="sec-label reveal">Experience</p>
+    <h2 class="sec-title reveal">Built across borders,<br><em>proven in the field</em></h2>
+
+    <article class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Aug 2024 – Feb 2026</div>
+        <div class="exp-where">Hybrid · Philippines</div>
+      </div>
+      <div>
+        <div class="exp-co">CryoPDP</div>
+        <div class="exp-role">Operations & Customer Support Specialist</div>
+        <ul class="exp-bullets">
+          <li>Resolved 100+ shipment queries weekly for 50+ B2B pharmaceutical clients across complex cold chain logistics requirements</li>
+          <li>Coordinated cross-departmental workflows — warehouse, dispatch, and compliance — to ensure on-time, regulation-compliant delivery of temperature-sensitive cargo</li>
+          <li>Served as primary client liaison for order intake, shipment tracking, and escalation resolution</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="chip">Cold Chain</span><span class="chip">Pharma Logistics</span>
+          <span class="chip">B2B Support</span><span class="chip">Order Management</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Feb 2022 – Present</div>
+        <div class="exp-where">Remote · US East Coast ops</div>
+      </div>
+      <div>
+        <div class="exp-co">Shipped.com</div>
+        <div class="exp-role">Operations & Delivery Coordinator</div>
+        <ul class="exp-bullets">
+          <li>Manage 15+ daily delivery loads across the US East Coast — dispatch, carrier coordination, depot communication through to final delivery</li>
+          <li>Coordinate directly with carriers, depots, and end clients to resolve delivery exceptions in real time across time zones</li>
+          <li>Handle end-to-end billing and account reconciliation for all delivery operations</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="chip">Last-Mile Delivery</span><span class="chip">Dispatch</span>
+          <span class="chip">Billing & Reconciliation</span><span class="chip">Remote</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Nov 2021 – Aug 2023</div>
+        <div class="exp-where">On-site · Philippines</div>
+      </div>
+      <div>
+        <div class="exp-co">Together-Ensemble Foundation & D'Aboville Foundation</div>
+        <div class="exp-role">Community Manager</div>
+        <ul class="exp-bullets">
+          <li>Managed communications, PR, events, and partner relations for two concurrent NGOs simultaneously</li>
+          <li>Coordinated volunteers, donor communications, and partner organizations across both foundations</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="chip">NGO Ops</span><span class="chip">Partner Relations</span><span class="chip">Event Coordination</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Jan 2021 – Oct 2022</div>
+        <div class="exp-where">On-site · Philippines</div>
+      </div>
+      <div>
+        <div class="exp-co">Element Boutique Hotel</div>
+        <div class="exp-role">PR & Marketing Director</div>
+        <ul class="exp-bullets">
+          <li>Directed vendor coordination, event planning, and partner management for a boutique hospitality property</li>
+          <li>Planned and executed weekly and quarterly events managing all supplier relationships and logistics</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="chip">Vendor Management</span><span class="chip">Event Planning</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Mar 2018 – Mar 2020</div>
+        <div class="exp-where">On-site · Philippines</div>
+      </div>
+      <div>
+        <div class="exp-co">GMO GlobalSign</div>
+        <div class="exp-role">Technical Support Specialist</div>
+        <ul class="exp-bullets">
+          <li>Provided technical support to 50+ clients weekly, handling sensitive escalation cases</li>
+          <li>Conducted onboarding and training for French-speaking new hires; served as French language lead and translated company website</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="chip">Technical Support</span><span class="chip">Training</span><span class="chip">French Lead</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section white" id="tools">
+  <div class="container">
+    <p class="sec-label reveal">Tools & Skills</p>
+    <h2 class="sec-title reveal">Ready to plug in<br><em>from day one</em></h2>
+    <div class="tools-grid reveal">
+      <div class="tool-card">
+        <div class="tool-label">Operations</div>
+        <ul class="tool-list">
+          <li>Dispatch & carrier coordination</li>
+          <li>Billing & reconciliation</li>
+          <li>Cold chain logistics</li>
+          <li>Last-mile delivery</li>
+          <li>SOP development</li>
+        </ul>
+      </div>
+      <div class="tool-card">
+        <div class="tool-label">Project Management</div>
+        <ul class="tool-list">
+          <li>Asana</li>
+          <li>Trello</li>
+          <li>ClickUp</li>
+          <li>Slack</li>
+          <li>Google Workspace</li>
+        </ul>
+      </div>
+      <div class="tool-card">
+        <div class="tool-label">CRM & Support</div>
+        <ul class="tool-list">
+          <li>Salesforce</li>
+          <li>Zendesk</li>
+          <li>MS Office</li>
+          <li>Shopify</li>
+          <li>MailChimp</li>
+        </ul>
+      </div>
+      <div class="tool-card">
+        <div class="tool-label">Languages</div>
+        <ul class="tool-list">
+          <li>French — Native</li>
+          <li>English — Fluent</li>
+          <li>Korean — Advanced</li>
+          <li>Malagasy — Native</li>
+          <li>Tagalog — Basic</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section off">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-text reveal">
+        <p class="sec-label">Why work with me</p>
+        <h2 class="sec-title" style="margin-bottom:24px;">Rare profile.<br><em>Proven numbers.</em></h2>
+        <p class="lead">I've managed cold chain pharma logistics <em>and</em> US last-mile delivery coordination simultaneously — fully remote, across time zones.</p>
+        <p>French-native in an English-dominant ops world. My last three major roles all came through direct referrals — that's what happens when people have seen your work up close.</p>
+      </div>
+      <ul class="why-list reveal">
+        <li><span class="why-icon">✓</span>Managing 100+ weekly B2B queries and 15+ daily delivery loads simultaneously, remotely</li>
+        <li><span class="why-icon">✓</span>Native French speaker — rare in logistics, essential for francophone clients and operations</li>
+        <li><span class="why-icon">✓</span>Available full-time during US Eastern hours from Manila</li>
+        <li><span class="why-icon">✓</span>Experience across Madagascar, France, Canada, Singapore, and the Philippines</li>
+        <li><span class="why-icon">✓</span>Fluent in Salesforce, Zendesk, ClickUp, Asana — zero ramp-up time on tools</li>
+        <li><span class="why-icon">✓</span>90% client satisfaction rate across 120+ advisory clients</li>
+        <li><span class="why-icon">✓</span>All three recent roles obtained through direct referrals</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <p class="sec-label">Let's work together</p>
+  <h2 class="contact-title">Available immediately.<br>Ready to contribute <em>from day one.</em></h2>
+  <p class="contact-sub">Open to fully remote operations, logistics coordination, and B2B customer support roles. Full-time availability during US Eastern hours.</p>
+  <div class="contact-btns">
+    <a href="mailto:Camille.Ramamonjisoa@gmail.com" class="btn btn-white">Email me directly</a>
+    <a href="https://www.linkedin.com/in/harmony-ramamonjisoa/" target="_blank" class="btn btn-ghost">LinkedIn</a>
+  </div>
+  <p class="contact-detail">
+    Camille.Ramamonjisoa@gmail.com &nbsp;·&nbsp; +63 906 072 3927<br/>
+    Manila, Philippines &nbsp;·&nbsp; Remote globally &nbsp;·&nbsp; US Eastern hours
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Harmony Ramamonjisoa</p>
+  <p>Remote Operations & Logistics Specialist</p>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('on'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  els.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
