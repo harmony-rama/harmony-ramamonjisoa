@@ -163,11 +163,19 @@ nav {
 
 .hero-avatar img {
   width: 180px;
-  height: 180px;
+  height: 225px;
   object-fit: cover;
+  object-position: top center;
   border-radius: 28px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.1);
   border: 3px solid var(--white);
+}
+
+@media (min-width: 768px) {
+  .hero-avatar img {
+    width: 200px;
+    height: 250px;
+  }
 }
 
 .hero-h1 {
