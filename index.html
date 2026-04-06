@@ -471,7 +471,7 @@ nav {
 }
 
 .exp-bullets li::before {
-  content: '–';
+  content: '-';
   position: absolute;
   left: 0;
   color: var(--teal);
@@ -592,6 +592,70 @@ nav {
   font-weight: 700;
 }
 
+/* ── PRICING SECTION ───────────────────────────────────────────── */
+.pricing-section {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 40px 0 32px 0;
+}
+
+.pricing-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  width: 220px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--teal-md);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.pricing-price {
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.pricing-price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.pricing-desc {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.pricing-note {
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.pricing-cta {
+  margin-top: 24px;
+  text-align: center;
+}
+
 /* ── CONTACT ───────────────────────────────────────────────────── */
 .contact {
   background: var(--ink);
@@ -697,14 +761,9 @@ footer p {
   .section { padding: 64px 0; }
   .strip-inner { justify-content: center; gap: 24px; }
   .contact { padding: 72px 24px; }
+  .pricing-grid { gap: 16px; }
+  .pricing-card { width: 100%; max-width: 260px; }
   footer { flex-direction: column; gap: 8px; text-align: center; }
-}
-
-@media (min-width: 768px) {
-  .hero-avatar img {
-    width: 200px;
-    height: 250px;
-  }
 }
 </style>
 </head>
@@ -717,6 +776,7 @@ footer p {
     <li><a href="#services">Services</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#tools">Tools</a></li>
+    <li><a href="#pricing">Pricing</a></li>
     <li><a href="#contact" class="nav-cta">Get in touch</a></li>
   </ul>
 </nav>
@@ -745,8 +805,8 @@ footer p {
       </div>
       
       <div class="hero-cta">
-        <a href="mailto:harmony.rama@yahoo.com" class="btn btn-teal">Get in touch</a>
-        <a href="https://www.linkedin.com/in/harmony-ramamonjisoa/" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
+        <a href="https://calendly.com/harmony-rama/30min" target="_blank" class="btn btn-teal">📅 Book Free Consultation</a>
+        <a href="https://www.linkedin.com/in/harmony-ramamonjisoa/" target="_blank" class="btn btn-outline">LinkedIn </a>
         <a href="Harmony_Ramamonjisoa_CV_2026.pdf" download class="btn btn-outline">📄 CV</a>
         <a href="Harmony_Ramamonjisoa_Portfolio.pdf" download class="btn btn-outline">📖 Portfolio</a>
       </div>
@@ -767,7 +827,7 @@ footer p {
           <div class="stat-lbl">Years remote ops</div>
         </div>
         <div>
-          <div class="stat-val">90<span>%</span></div>
+          <div class="stat-val">92<span>%</span></div>
           <div class="stat-lbl">Client satisfaction</div>
         </div>
       </div>
@@ -801,7 +861,7 @@ footer p {
       <div class="srv-card">
         <div class="srv-num">01</div>
         <h3 class="srv-title">Logistics & Delivery Operations</h3>
-        <p class="srv-desc">End-to-end shipment coordination — dispatch, carrier management, depot liaison, billing, and reconciliation. Experienced in cold chain pharmaceutical logistics and US East Coast last-mile delivery across 15+ daily loads.</p>
+        <p class="srv-desc">End-to-end shipment coordination: dispatch, carrier management, depot liaison, billing, and reconciliation. Experienced in cold chain pharmaceutical logistics and US East Coast last-mile delivery across 15+ daily loads.</p>
       </div>
       <div class="srv-card">
         <div class="srv-num">02</div>
@@ -811,7 +871,7 @@ footer p {
       <div class="srv-card">
         <div class="srv-num">03</div>
         <h3 class="srv-title">Remote Team & Project Coordination</h3>
-        <p class="srv-desc">SOP development, new hire training, volunteer and partner coordination, and event logistics — delivered across multiple time zones simultaneously. Proven ability to manage complexity without losing detail.</p>
+        <p class="srv-desc">SOP development, new hire training, volunteer and partner coordination, and event logistics: delivered across multiple time zones simultaneously. Proven ability to manage complexity without losing detail.</p>
       </div>
     </div>
   </div>
@@ -825,7 +885,7 @@ footer p {
 
     <article class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-period">Aug 2024 – Feb 2026</div>
+        <div class="exp-period">Aug 2024 - Feb 2026</div>
         <div class="exp-where">Hybrid · Philippines</div>
       </div>
       <div>
@@ -833,7 +893,7 @@ footer p {
         <div class="exp-role">Operations & Customer Support Specialist</div>
         <ul class="exp-bullets">
           <li>Resolved 100+ shipment queries weekly for 50+ B2B pharmaceutical clients across complex cold chain logistics requirements</li>
-          <li>Coordinated cross-departmental workflows — warehouse, dispatch, and compliance — to ensure on-time, regulation-compliant delivery of temperature-sensitive cargo</li>
+          <li>Coordinated cross-departmental workflows: warehouse, dispatch, and compliance: to ensure on-time, regulation-compliant delivery of temperature-sensitive cargo</li>
           <li>Served as primary client liaison for order intake, shipment tracking, and escalation resolution</li>
         </ul>
         <div class="exp-chips">
@@ -845,14 +905,14 @@ footer p {
 
     <article class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-period">Feb 2022 – Present</div>
+        <div class="exp-period">Feb 2022 - Present</div>
         <div class="exp-where">Remote · US East Coast ops</div>
       </div>
       <div>
         <div class="exp-co">Shipped.com</div>
         <div class="exp-role">Operations & Delivery Coordinator</div>
         <ul class="exp-bullets">
-          <li>Manage 15+ daily delivery loads across the US East Coast — dispatch, carrier coordination, depot communication through to final delivery</li>
+          <li>Manage 15+ daily delivery loads across the US East Coast: dispatch, carrier coordination, depot communication through to final delivery</li>
           <li>Coordinate directly with carriers, depots, and end clients to resolve delivery exceptions in real time across time zones</li>
           <li>Handle end-to-end billing and account reconciliation for all delivery operations</li>
         </ul>
@@ -865,7 +925,7 @@ footer p {
 
     <article class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-period">Nov 2021 – Aug 2023</div>
+        <div class="exp-period">Nov 2021 - Aug 2023</div>
         <div class="exp-where">On-site · Philippines</div>
       </div>
       <div>
@@ -883,7 +943,7 @@ footer p {
 
     <article class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-period">Jan 2021 – Oct 2022</div>
+        <div class="exp-period">Jan 2021 - Oct 2022</div>
         <div class="exp-where">On-site · Philippines</div>
       </div>
       <div>
@@ -901,7 +961,7 @@ footer p {
 
     <article class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-period">Mar 2018 – Mar 2020</div>
+        <div class="exp-period">Mar 2018 - Mar 2020</div>
         <div class="exp-where">On-site · Philippines</div>
       </div>
       <div>
@@ -958,11 +1018,11 @@ footer p {
       <div class="tool-card">
         <div class="tool-label">Languages</div>
         <ul class="tool-list">
-          <li>French — Native</li>
-          <li>English — Fluent</li>
-          <li>Korean — Advanced</li>
-          <li>Malagasy — Native</li>
-          <li>Tagalog — Intermediate</li>
+          <li>French: Native</li>
+          <li>English: Fluent</li>
+          <li>Korean: Advanced</li>
+          <li>Malagasy: Native</li>
+          <li>Tagalog: Intermediate</li>
         </ul>
       </div>
     </div>
@@ -976,18 +1036,49 @@ footer p {
       <div class="why-text reveal">
         <p class="sec-label">Why work with me</p>
         <h2 class="sec-title" style="margin-bottom:24px;">Rare profile.<br><em>Proven numbers.</em></h2>
-        <p class="lead">I've managed cold chain pharma logistics <em>and</em> US last-mile delivery coordination simultaneously — fully remote, across time zones.</p>
-        <p>French-native in an English-dominant ops world. My last five major roles all came through direct referrals — that's what happens when people have seen your work up close.</p>
+        <p class="lead">I've managed cold chain pharma logistics <em>and</em> US last-mile delivery coordination simultaneously: fully remote, across time zones.</p>
+        <p>French-native in an English-dominant ops world. My last five major roles all came through direct referrals: that's what happens when people have seen your work up close.</p>
       </div>
       <ul class="why-list reveal">
         <li><span class="why-icon">✓</span>Managing 100+ weekly B2B queries and 15+ daily delivery loads simultaneously, remotely</li>
-        <li><span class="why-icon">✓</span>Native French speaker — rare in logistics, essential for francophone clients and operations</li>
+        <li><span class="why-icon">✓</span>Native French speaker: rare in logistics, essential for francophone clients and operations</li>
         <li><span class="why-icon">✓</span>Available full-time during US Eastern hours from Manila</li>
         <li><span class="why-icon">✓</span>Experience across the United States, Madagascar, France, Canada, and the Philippines</li>
-        <li><span class="why-icon">✓</span>Fluent in Salesforce, Zendesk, ClickUp, Asana — zero ramp-up time on tools</li>
-        <li><span class="why-icon">✓</span>90% client satisfaction rate across 120+ advisory clients</li>
+        <li><span class="why-icon">✓</span>Fluent in Salesforce, Zendesk, ClickUp, Asana: zero ramp-up time on tools</li>
+        <li><span class="why-icon">✓</span>92% client satisfaction rate across 120+ advisory clients</li>
         <li><span class="why-icon">✓</span>All five recent roles obtained through direct referrals</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <p class="sec-label reveal">Investment</p>
+    <h2 class="sec-title reveal">Simple, <em>transparent</em> pricing</h2>
+    
+    <div class="pricing-grid reveal">
+      <div class="pricing-card">
+        <div class="pricing-price">$1,500<span>/project</span></div>
+        <div class="pricing-desc">Cold chain audit · Process review · SOP documentation</div>
+        <div class="pricing-note">One-time · 2-3 weeks</div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-price">$2,000<span>/month</span></div>
+        <div class="pricing-desc">Remote ops support · Dispatch coordination · B2B customer support</div>
+        <div class="pricing-note">Monthly retainer</div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-price">$3,000+<span>/month</span></div>
+        <div class="pricing-desc">Full-service operations management · Team coordination · Strategic planning</div>
+        <div class="pricing-note">Custom · To be discussed</div>
+      </div>
+    </div>
+    
+    <div class="pricing-cta reveal">
+      <a href="https://calendly.com/harmony-rama/30min" target="_blank" class="btn btn-teal">📅 Book a free discovery call</a>
+      <p style="font-size: 12px; color: var(--muted); margin-top: 16px;">No obligation · 15-20 minutes · We'll find the right fit</p>
     </div>
   </div>
 </section>
@@ -998,7 +1089,8 @@ footer p {
   <h2 class="contact-title">Available immediately.<br>Ready to contribute <em>from day one.</em></h2>
   <p class="contact-sub">Open to fully remote operations, logistics coordination, and B2B customer support roles. Full-time availability during US Eastern hours.</p>
   <div class="contact-btns">
-    <a href="mailto:harmony.rama@yahoo.com" class="btn btn-white">Email me directly</a>
+    <a href="https://calendly.com/harmony-rama/30min" target="_blank" class="btn btn-white">📅 Book a call</a>
+    <a href="mailto:harmony.rama@yahoo.com" class="btn btn-ghost">Email me </a>
     <a href="https://www.linkedin.com/in/harmony-ramamonjisoa/" target="_blank" class="btn btn-ghost">LinkedIn</a>
     <a href="Harmony_Ramamonjisoa_CV_2026.pdf" download class="btn btn-ghost">📄 CV</a>
     <a href="Harmony_Ramamonjisoa_Portfolio.pdf" download class="btn btn-ghost">📖 Portfolio</a>
